@@ -1,0 +1,40 @@
+interaçao 1  entrada		O -> 0 0 
+			 find_best_move	X -> 0 1
+	is_max = false
+	depth = 0
+	minmax preenche 		0 -> 0 2
+	chama recursivamente
+	
+interaçao 2  
+	is_max = true
+	depth = 1
+	minmax preenche 	X -> 1 0
+	chama recursivamente
+	
+interaçao 3
+	is_max = false
+	depth = 2
+	minmax preenche 	O -> 1 1
+	chama recursivamente
+	
+interaçao 4 
+	is_max = true
+	depth = 3
+	minmax preenche 	X -> 1 2
+	chama recursivamente
+	
+interaçao 5
+	is_max = false
+	depth = 4
+	minmax preenche 	O -> 2 1
+	chama recursivamente
+	
+interaçao 6
+	is_max = true
+	depth = 5
+	score = -10
+	return score
+	
+Iteraçao 5 
+	com o retorno coloca resposta como vazio
+	segue as demais celulas
